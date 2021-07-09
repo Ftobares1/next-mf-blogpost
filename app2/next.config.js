@@ -20,9 +20,15 @@ module.exports = {
         app1: isServer
           ? path.resolve(
               __dirname,
-              '../app1/.next/server/static/runtime/remoteEntry.js'
+              '../childapp1/.next/server/static/runtime/remoteEntry.js'
             )
-          : 'app1', // for client, treat it as a global
+          : 'childapp1',
+        app2: isServer
+        ? path.resolve(
+            __dirname,
+            '../childapp2/.next/server/static/runtime/remoteEntry.js'
+          )
+        : 'childapp2', // for client, treat it as a global
       },
       exposes: {},
       shared: [],

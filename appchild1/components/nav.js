@@ -14,7 +14,7 @@ const Nav = () => {
         alignItems: 'center',
         fontSize: '24px',
       }}>
-      Nav
+      Child Application 1
     </nav>
   );
 };

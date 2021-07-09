@@ -13,6 +13,7 @@ class MyDocument extends Document {
         {patchSharing()}
         {/* This is where we're actually allowing app 2 to get the code from app1 */}
         <script src="http://localhost:3000/_next/static/remoteEntryMerged.js" />
+        <script src="http://localhost:3002/_next/static/remoteEntryMerged.js" />
         <Head />
         <body>
           <Main />
